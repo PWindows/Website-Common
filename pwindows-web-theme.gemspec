@@ -1,4 +1,4 @@
-em::Specification.new do |spec|
+Gem::Specification.new do |spec|
   spec.name          = "pwindows-theme"
   spec.version       = "1.0.0"
   spec.authors       = ["PeterMaZep"]
