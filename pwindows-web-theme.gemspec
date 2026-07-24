@@ -2,10 +2,10 @@ Gem::Specification.new do |spec|
   spec.name          = "pwindows-theme"
   spec.version       = "1.0.0"
   spec.authors       = ["PeterMaZep"]
-  spec.email         = ["your-email@example.com"]
+  spec.email         = ["petermazep@pwindows.qzz.io"]
 
   spec.summary       = "Shared theme for PWindows websites"
-  spec.homepage      = "https://github.com/YOUR_ORG/pwindows-theme"
+  spec.homepage      = "https://github.com/PWindows/pwindows-common"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
