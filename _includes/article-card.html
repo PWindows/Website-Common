@@ -1,4 +1,6 @@
 {% assign article = include.article %}
+{% assign article_fallback = false %}
+{% if site.active_lang != site.default_lang and article.lang == site.default_lang %}{% assign article_fallback = true %}{% endif %}
 <article
   class="article-card"
   data-date="{{ article.date | date: '%Y-%m-%d' }}"
@@ -12,8 +14,10 @@
       alt=""
       loading="lazy"
       decoding="async"
+      width="1408"
+      height="702"
     />
-    <div class="card-content">
+    <div class="card-content"{% if article_fallback %} lang="{{ site.default_lang }}"{% endif %}>
       <span class="type-label">{{ article.type }}</span>
       <h2>{{ article.title }}</h2>
       <p>{{ article.summary | strip_html | truncate: 120 }}</p>

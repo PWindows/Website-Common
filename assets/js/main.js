@@ -53,7 +53,10 @@ function setupMenu() {
     menu.classList.toggle("active", open);
     document.body.classList.toggle("menu-open", open && window.innerWidth <= 768);
     menuButton.setAttribute("aria-expanded", String(open));
-    menuButton.setAttribute("aria-label", open ? "Close site menu" : "Open site menu");
+    menuButton.setAttribute(
+      "aria-label",
+      open ? menuButton.dataset.closeLabel : menuButton.dataset.openLabel,
+    );
     menu.setAttribute("aria-hidden", String(!open));
     menu.toggleAttribute("inert", !open);
 
@@ -131,7 +134,8 @@ function setupBackToTop() {
   }
 
   button.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
   });
 
   window.addEventListener("scroll", toggleVisibility);

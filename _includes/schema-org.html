@@ -4,10 +4,11 @@
     "@type": "Organization",
     "name": "PWindows",
     "url": {{ site.url | jsonify }},
-<<<<<<< HEAD
-    "logo": "{{ '/assets/PWindows.png' | absolute_url }}"
-=======
-    "logo": "{{ '/assets/PWindows.svg' | absolute_url }}"
+    "logo": {{ '/assets/PWindows.svg' | absolute_url | jsonify }},
+    "sameAs": [
+      {{ site.data.site.links.discord | jsonify }},
+      {{ site.data.site.links.youtube | jsonify }},
+      {{ site.data.site.links.twitter | jsonify }}
+    ]
   }
->>>>>>> 71c661557acda5b2fd07f46945751f2e6b9600fb
 </script>

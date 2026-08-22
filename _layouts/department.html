@@ -8,6 +8,8 @@ layout: default
 {% assign department_name = localized_department.name | default: default_department.name %}
 {% assign department_bio = localized_department.bio | default: default_department.bio %}
 {% assign department_intro = page.department | append: "-intro" %}
+{% assign department_fallback = false %}
+{% unless localized_department %}{% if site.active_lang != site.default_lang %}{% assign department_fallback = true %}{% endif %}{% endunless %}
 
 <section class="content-page">
   <header class="content-page-header">
@@ -15,8 +17,9 @@ layout: default
     <p class="content-page-intro">{{ site.data.translations[site.active_lang].departments[department_intro] }}</p>
   </header>
   <div class="content-page-body">
+    {% include fallback-notice.html show=department_fallback %}
     <div class="content-card content-card--centered">
-      <p>{{ department_bio }}</p>
+      <p{% if department_fallback %} lang="{{ site.default_lang }}"{% endif %}>{{ department_bio }}</p>
       <a class="btn" href="{{ '/departments/' | relative_url }}">{{ site.data.translations[site.active_lang].departments.back-button }}</a>
     </div>
 

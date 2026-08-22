@@ -42,8 +42,10 @@ tr-tr:
   label: "Türkçe (Türkiye)"
 ar-sa:
   label: "العربية (المملكة العربية السعودية)"
+  direction: rtl
 he-il:
   label: "עברית (ישראל)"
+  direction: rtl
 hi-in:
   label: "हिन्दी (भारत)"
 th-th:

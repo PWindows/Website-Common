@@ -8,24 +8,30 @@ layout: default
 {% assign person_name = localized_person.name | default: default_person.name %}
 {% assign person_role = localized_person.role | default: default_person.role %}
 {% assign person_bio = localized_person.bio | default: default_person.bio %}
+{% assign person_fallback = false %}
+{% unless localized_person %}{% if site.active_lang != site.default_lang %}{% assign person_fallback = true %}{% endif %}{% endunless %}
+{% assign ui = site.data.ui[site.active_lang] | default: site.data.ui[site.default_lang] %}
 <section class="content-page">
   <header class="content-page-header">
     <h1>{{ person_name }}</h1>
     <p class="content-page-intro">{{ person_role }}</p>
   </header>
   <div class="content-page-body">
+    {% include fallback-notice.html show=person_fallback %}
     <article class="content-card content-card--centered staff-detail-card">
       <img
         class="staff-detail-image"
         src="{{ person.pfp | relative_url }}"
-        alt="{{ person_name | escape }} profile picture"
+        alt="{{ person_name | escape }} {{ ui.profile_picture | escape }}"
         loading="lazy"
+        width="672"
+        height="672"
       />
-      <div class="staff-detail-content">
+      <div class="staff-detail-content"{% if person_fallback %} lang="{{ site.default_lang }}"{% endif %}>
         <p class="staff-role">{{ person_role }}</p>
         <p class="staff-bio">{{ person_bio }}</p>
         {% if person.socials %}
-          <ul class="staff-socials" aria-label="{{ person_name | escape }} social links">
+          <ul class="staff-socials" aria-label="{{ person_name | escape }} {{ ui.social_links | escape }}">
             {% for social in person.socials %}
               <li><a href="{{ social[1] | escape }}">{% if social[0] == 'github' %}GitHub{% else %}{{ social[0] | capitalize }}{% endif %}</a></li>
             {% endfor %}
