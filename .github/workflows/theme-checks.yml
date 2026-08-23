@@ -20,7 +20,7 @@ jobs:
       - name: Check JavaScript syntax
         run: node --check assets/js/main.js
       - name: Reject unresolved conflict markers
-        run: ! grep -R -n -E "^(<<<<<<<|=======|>>>>>>>)" --exclude-dir=.git --exclude-dir=vendor .
+        run: '! grep -R -n -E "^(<<<<<<<|=======|>>>>>>>)" --exclude-dir=.git --exclude-dir=vendor .'
       - name: Build theme gem
         run: gem build pwindows-web-theme.gemspec
       - name: Verify packaged files
