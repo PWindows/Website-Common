@@ -18,7 +18,7 @@ en-us:
       about: "About us"
       rules: "Rules"
       games: "Games"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Departments"
       mcd: "Minecraft department"
@@ -44,7 +44,7 @@ en-us:
       rd: "Roblox Department"
       ud: "Unity Department"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Coming soon"
   index:
@@ -88,7 +88,7 @@ en-us:
       game-studio:
         title: "Game studio"
         text-1: "We have been working on new games as a game studio, such as "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " and "
         link-ood: "Obby of Dominance"
         text-3: ". We have many departments including the "
@@ -189,7 +189,7 @@ zh-cn:
       about: "关于我们"
       rules: "规则"
       games: "游戏"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "部门"
       mcd: "MC部门"
@@ -215,7 +215,7 @@ zh-cn:
       rd: "《罗布乐思》部门"
       ud: "Unity部门"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "即将上线"
   index:
@@ -259,7 +259,7 @@ zh-cn:
       game-studio:
         title: "游戏开发组"
         text-1: "我们作为一个游戏开发组一直在开发新游戏，比如"
-        link-sc: "《Sacred Cubes》"
+        link-sc: "《Sacred Remains》"
         text-2: "和"
         link-ood: "《Obby of Dominance》"
         text-3: "。我们有许多部门，例如"
@@ -360,7 +360,7 @@ en-gb:
       about: "About us"
       rules: "Rules"
       games: "Games"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Departments"
       mcd: "Minecraft department"
@@ -386,7 +386,7 @@ en-gb:
       rd: "Roblox Department"
       ud: "Unity Department"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Coming soon"
   index:
@@ -430,7 +430,7 @@ en-gb:
       game-studio:
         title: "Game studio"
         text-1: "We have been working on new games as a game studio, such as "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " and "
         link-ood: "Obby of Dominance"
         text-3: ". We have many departments including the "
@@ -531,7 +531,7 @@ es-es:
       about: "Sobre nosotros"
       rules: "Normas"
       games: "Juegos"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Departamentos"
       mcd: "Departamento de Minecraft"
@@ -557,7 +557,7 @@ es-es:
       rd: "Departamento de Roblox"
       ud: "Departamento de Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Próximamente"
   index:
@@ -601,7 +601,7 @@ es-es:
       game-studio:
         title: "Estudio de juegos"
         text-1: "Hemos estado trabajando en nuevos juegos como estudio, como "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " y "
         link-ood: "Obby of Dominance"
         text-3: ". Tenemos muchos departamentos, incluyendo el "
@@ -702,7 +702,7 @@ es-mx:
       about: "Sobre nosotros"
       rules: "Reglas"
       games: "Juegos"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Departamentos"
       mcd: "Departamento de Minecraft"
@@ -728,7 +728,7 @@ es-mx:
       rd: "Departamento de Roblox"
       ud: "Departamento de Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Próximamente"
   index:
@@ -772,7 +772,7 @@ es-mx:
       game-studio:
         title: "Estudio de juegos"
         text-1: "Hemos estado trabajando en nuevos juegos como estudio, como "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " y "
         link-ood: "Obby of Dominance"
         text-3: ". Tenemos muchos departamentos, incluyendo el "
@@ -873,7 +873,7 @@ fr-fr:
       about: "À propos de nous"
       rules: "Règles"
       games: "Jeux"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Départements"
       mcd: "Département Minecraft"
@@ -899,7 +899,7 @@ fr-fr:
       rd: "Département Roblox"
       ud: "Département Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Bientôt disponible"
   index:
@@ -943,7 +943,7 @@ fr-fr:
       game-studio:
         title: "Studio de jeux"
         text-1: "Nous travaillons sur de nouveaux jeux en tant que studio, comme "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " et "
         link-ood: "Obby of Dominance"
         text-3: ". Nous avons de nombreux départements, y compris le "
@@ -1044,7 +1044,7 @@ fr-ca:
       about: "À propos de nous"
       rules: "Règles"
       games: "Jeux"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Départements"
       mcd: "Département Minecraft"
@@ -1070,7 +1070,7 @@ fr-ca:
       rd: "Département Roblox"
       ud: "Département Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Bientôt disponible"
   index:
@@ -1114,7 +1114,7 @@ fr-ca:
       game-studio:
         title: "Studio de jeux"
         text-1: "Nous travaillons sur de nouveaux jeux en tant que studio, comme "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " et "
         link-ood: "Obby of Dominance"
         text-3: ". Nous avons de nombreux départements, y compris le "
@@ -1215,7 +1215,7 @@ de-de:
       about: "Über uns"
       rules: "Regeln"
       games: "Spiele"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Abteilungen"
       mcd: "Minecraft-Abteilung"
@@ -1241,7 +1241,7 @@ de-de:
       rd: "Roblox-Abteilung"
       ud: "Unity-Abteilung"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Demnächst verfügbar"
   index:
@@ -1285,7 +1285,7 @@ de-de:
       game-studio:
         title: "Spielestudio"
         text-1: "Wir haben als Spielestudio an neuen Spielen gearbeitet, wie "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " und "
         link-ood: "Obby of Dominance"
         text-3: ". Wir haben viele Abteilungen, darunter die "
@@ -1386,7 +1386,7 @@ it-it:
       about: "Chi siamo"
       rules: "Regole"
       games: "Giochi"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Dipartimenti"
       mcd: "Dipartimento Minecraft"
@@ -1412,7 +1412,7 @@ it-it:
       rd: "Dipartimento Roblox"
       ud: "Dipartimento Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Prossimamente"
   index:
@@ -1456,7 +1456,7 @@ it-it:
       game-studio:
         title: "Studio di giochi"
         text-1: "Abbiamo lavorato a nuovi giochi come studio, come "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " e "
         link-ood: "Obby of Dominance"
         text-3: ". Abbiamo molti dipartimenti, tra cui il "
@@ -1557,7 +1557,7 @@ pt-pt:
       about: "Sobre nós"
       rules: "Regras"
       games: "Jogos"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Departamentos"
       mcd: "Departamento de Minecraft"
@@ -1583,7 +1583,7 @@ pt-pt:
       rd: "Departamento de Roblox"
       ud: "Departamento de Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Em breve"
   index:
@@ -1627,7 +1627,7 @@ pt-pt:
       game-studio:
         title: "Estúdio de jogos"
         text-1: "Temos trabalhado em novos jogos como estúdio, como "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " e "
         link-ood: "Obby of Dominance"
         text-3: ". Temos muitos departamentos, incluindo o "
@@ -1728,7 +1728,7 @@ pt-br:
       about: "Sobre nós"
       rules: "Regras"
       games: "Jogos"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Departamentos"
       mcd: "Departamento Minecraft"
@@ -1754,7 +1754,7 @@ pt-br:
       rd: "Departamento Roblox"
       ud: "Departamento Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Em breve"
   index:
@@ -1798,7 +1798,7 @@ pt-br:
       game-studio:
         title: "Estúdio de jogos"
         text-1: "Temos trabalhado em novos jogos como estúdio, como "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " e "
         link-ood: "Obby of Dominance"
         text-3: ". Temos muitos departamentos, incluindo o "
@@ -1899,7 +1899,7 @@ ja-jp:
       about: "私たちについて"
       rules: "ルール"
       games: "ゲーム"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "部門"
       mcd: "Minecraft部門"
@@ -1925,7 +1925,7 @@ ja-jp:
       rd: "Roblox部門"
       ud: "Unity部門"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "近日公開"
   index:
@@ -1969,7 +1969,7 @@ ja-jp:
       game-studio:
         title: "ゲームスタジオ"
         text-1: "私たちはゲームスタジオとして、"
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: "や"
         link-ood: "Obby of Dominance"
         text-3: "などの新しいゲームを開発しています。PWindowsには、"
@@ -2070,7 +2070,7 @@ ko-kr:
       about: "회사 소개"
       rules: "규칙"
       games: "게임"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "부서"
       mcd: "Minecraft 부서"
@@ -2096,7 +2096,7 @@ ko-kr:
       rd: "Roblox 부서"
       ud: "Unity 부서"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "출시 예정"
   index:
@@ -2140,7 +2140,7 @@ ko-kr:
       game-studio:
         title: "게임 스튜디오"
         text-1: "게임 스튜디오로서 새로운 게임을 개발하고 있습니다. "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: "와"
         link-ood: "Obby of Dominance"
         text-3: " 등이 있습니다. "
@@ -2241,7 +2241,7 @@ ru-ru:
       about: "О нас"
       rules: "Правила"
       games: "Игры"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Отделы"
       mcd: "Отдел Minecraft"
@@ -2267,7 +2267,7 @@ ru-ru:
       rd: "Отдел Roblox"
       ud: "Отдел Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Скоро"
   index:
@@ -2311,7 +2311,7 @@ ru-ru:
       game-studio:
         title: "Игровая студия"
         text-1: "Мы работаем над новыми играми как студия, такие как "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " и "
         link-ood: "Obby of Dominance"
         text-3: ". У нас много отделов, включая "
@@ -2412,7 +2412,7 @@ nl-nl:
       about: "Over ons"
       rules: "Regels"
       games: "Spellen"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Afdelingen"
       mcd: "Minecraft-afdeling"
@@ -2438,7 +2438,7 @@ nl-nl:
       rd: "Roblox-afdeling"
       ud: "Unity-afdeling"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Binnenkort"
   index:
@@ -2482,7 +2482,7 @@ nl-nl:
       game-studio:
         title: "Gamestudio"
         text-1: "We hebben als gamestudio aan nieuwe spellen gewerkt, zoals "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " en "
         link-ood: "Obby of Dominance"
         text-3: ". We hebben veel afdelingen, waaronder de "
@@ -2583,7 +2583,7 @@ pl-pl:
       about: "O nas"
       rules: "Zasady"
       games: "Gry"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Działy"
       mcd: "Dział Minecraft"
@@ -2609,7 +2609,7 @@ pl-pl:
       rd: "Dział Roblox"
       ud: "Dział Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Wkrótce"
   index:
@@ -2653,7 +2653,7 @@ pl-pl:
       game-studio:
         title: "Studio gier"
         text-1: "Pracujemy nad nowymi grami jako studio, takimi jak "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " i "
         link-ood: "Obby of Dominance"
         text-3: ". Mamy wiele działów, w tym "
@@ -2754,7 +2754,7 @@ sv-se:
       about: "Om oss"
       rules: "Regler"
       games: "Spel"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Avdelningar"
       mcd: "Minecraft-avdelningen"
@@ -2780,7 +2780,7 @@ sv-se:
       rd: "Roblox-avdelningen"
       ud: "Unity-avdelningen"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Kommer snart"
   index:
@@ -2824,7 +2824,7 @@ sv-se:
       game-studio:
         title: "Spelstudio"
         text-1: "Vi har arbetat med nya spel som spelstudio, som "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " och "
         link-ood: "Obby of Dominance"
         text-3: ". Vi har många avdelningar, inklusive "
@@ -2925,7 +2925,7 @@ da-dk:
       about: "Om os"
       rules: "Regler"
       games: "Spil"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Afdeling"
       mcd: "Minecraft-afdeling"
@@ -2951,7 +2951,7 @@ da-dk:
       rd: "Roblox-afdeling"
       ud: "Unity-afdeling"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Kommer snart"
   index:
@@ -2995,7 +2995,7 @@ da-dk:
       game-studio:
         title: "Spilstudie"
         text-1: "Vi har arbejdet på nye spil som et spilstudie, såsom "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " og "
         link-ood: "Obby of Dominance"
         text-3: ". Vi har mange afdelinger, herunder "
@@ -3096,7 +3096,7 @@ no-no:
       about: "Om oss"
       rules: "Regler"
       games: "Spill"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Avdelinger"
       mcd: "Minecraft-avdeling"
@@ -3122,7 +3122,7 @@ no-no:
       rd: "Roblox-avdeling"
       ud: "Unity-avdeling"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Kommer snart"
   index:
@@ -3166,7 +3166,7 @@ no-no:
       game-studio:
         title: "Spillstudio"
         text-1: "Vi har jobbet med nye spill som et spillstudio, som "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " og "
         link-ood: "Obby of Dominance"
         text-3: ". Vi har mange avdelinger, inkludert "
@@ -3267,7 +3267,7 @@ fi-fi:
       about: "Meistä"
       rules: "Säännöt"
       games: "Pelit"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Osastot"
       mcd: "Minecraft-osasto"
@@ -3293,7 +3293,7 @@ fi-fi:
       rd: "Roblox-osasto"
       ud: "Unity-osasto"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Tulossa pian"
   index:
@@ -3337,7 +3337,7 @@ fi-fi:
       game-studio:
         title: "Pelistudio"
         text-1: "Olemme työskennelleet uusien pelien parissa pelistudiona, kuten "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " ja "
         link-ood: "Obby of Dominance"
         text-3: ". Meillä on monia osastoja, kuten "
@@ -3438,7 +3438,7 @@ tr-tr:
       about: "Hakkımızda"
       rules: "Kurallar"
       games: "Oyunlar"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Departmanlar"
       mcd: "Minecraft departmanı"
@@ -3464,7 +3464,7 @@ tr-tr:
       rd: "Roblox Departmanı"
       ud: "Unity Departmanı"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Yakında"
   index:
@@ -3508,7 +3508,7 @@ tr-tr:
       game-studio:
         title: "Oyun stüdyosu"
         text-1: "Bir oyun stüdyosu olarak yeni oyunlar üzerinde çalışıyoruz, örneğin "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " ve "
         link-ood: "Obby of Dominance"
         text-3: ". Birçok departmanımız var, bunlar arasında "
@@ -3609,7 +3609,7 @@ ar-sa:
       about: "من نحن"
       rules: "القواعد"
       games: "الألعاب"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "الأقسام"
       mcd: "قسم ماينكرافت"
@@ -3635,7 +3635,7 @@ ar-sa:
       rd: "قسم Roblox"
       ud: "قسم Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "قريباً"
   index:
@@ -3679,7 +3679,7 @@ ar-sa:
       game-studio:
         title: "استوديو ألعاب"
         text-1: "عملنا كاستوديو ألعاب على ألعاب جديدة، مثل "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " و "
         link-ood: "Obby of Dominance"
         text-3: ". لدينا العديد من الأقسام، بما في ذلك "
@@ -3780,7 +3780,7 @@ he-il:
       about: "אודותינו"
       rules: "חוקים"
       games: "משחקים"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "מחלקות"
       mcd: "מחלקת Minecraft"
@@ -3806,7 +3806,7 @@ he-il:
       rd: "מחלקת Roblox"
       ud: "מחלקת Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "בקרוב"
   index:
@@ -3850,7 +3850,7 @@ he-il:
       game-studio:
         title: "סטודיו למשחקים"
         text-1: "עבדנו על משחקים חדשים כסטודיו, כגון "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " ו-"
         link-ood: "Obby of Dominance"
         text-3: ". יש לנו מחלקות רבות, כולל "
@@ -3951,7 +3951,7 @@ hi-in:
       about: "हमारे बारे में"
       rules: "नियम"
       games: "खेल"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "विभाग"
       mcd: "Minecraft विभाग"
@@ -3977,7 +3977,7 @@ hi-in:
       rd: "Roblox विभाग"
       ud: "Unity विभाग"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "जल्द आ रहा है"
   index:
@@ -4021,7 +4021,7 @@ hi-in:
       game-studio:
         title: "गेम स्टूडियो"
         text-1: "हम एक गेम स्टूडियो के रूप में नए गेम पर काम कर रहे हैं, जैसे "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " और "
         link-ood: "Obby of Dominance"
         text-3: ". हमारे कई विभाग हैं, जिनमें "
@@ -4122,7 +4122,7 @@ th-th:
       about: "เกี่ยวกับเรา"
       rules: "กฎ"
       games: "เกม"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "แผนก"
       mcd: "แผนก Minecraft"
@@ -4148,7 +4148,7 @@ th-th:
       rd: "แผนก Roblox"
       ud: "แผนก Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "เร็วๆ นี้"
   index:
@@ -4192,7 +4192,7 @@ th-th:
       game-studio:
         title: "สตูดิโอเกม"
         text-1: "เราได้ทำงานในเกมใหม่ในฐานะสตูดิโอเกม เช่น "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " และ "
         link-ood: "Obby of Dominance"
         text-3: ". เรามีหลายแผนก รวมถึง "
@@ -4293,7 +4293,7 @@ vi-vn:
       about: "Về chúng tôi"
       rules: "Quy tắc"
       games: "Trò chơi"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Bộ phận"
       mcd: "Bộ phận Minecraft"
@@ -4319,7 +4319,7 @@ vi-vn:
       rd: "Bộ phận Roblox"
       ud: "Bộ phận Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Sắp ra mắt"
   index:
@@ -4363,7 +4363,7 @@ vi-vn:
       game-studio:
         title: "Studio trò chơi"
         text-1: "Chúng tôi đã làm việc trên các trò chơi mới như một studio, chẳng hạn như "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " và "
         link-ood: "Obby of Dominance"
         text-3: ". Chúng tôi có nhiều bộ phận, bao gồm "
@@ -4464,7 +4464,7 @@ id-id:
       about: "Tentang kami"
       rules: "Aturan"
       games: "Game"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Departemen"
       mcd: "Departemen Minecraft"
@@ -4490,7 +4490,7 @@ id-id:
       rd: "Departemen Roblox"
       ud: "Departemen Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Segera hadir"
   index:
@@ -4534,7 +4534,7 @@ id-id:
       game-studio:
         title: "Studio game"
         text-1: "Kami telah mengerjakan game baru sebagai studio game, seperti "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " dan "
         link-ood: "Obby of Dominance"
         text-3: ". Kami memiliki banyak departemen, termasuk "
@@ -4635,7 +4635,7 @@ ms-my:
       about: "Tentang kami"
       rules: "Peraturan"
       games: "Permainan"
-      sacred-cubes: "Sacred Cubes"
+      sacred-remains: "Sacred Remains"
       obby-of-dominance: "Obby of Dominance"
       departments: "Jabatan"
       mcd: "Jabatan Minecraft"
@@ -4661,7 +4661,7 @@ ms-my:
       rd: "Jabatan Roblox"
       ud: "Jabatan Unity"
       oob: "Obby of Dominance"
-      sc: "Sacred Cubes"
+      sc: "Sacred Remains"
   placeholder:
     comingsoon-server: "Akan datang"
   index:
@@ -4705,7 +4705,7 @@ ms-my:
       game-studio:
         title: "Studio permainan"
         text-1: "Kami telah mengerjakan permainan baharu sebagai studio permainan, seperti "
-        link-sc: "Sacred Cubes"
+        link-sc: "Sacred Remains"
         text-2: " dan "
         link-ood: "Obby of Dominance"
         text-3: ". Kami mempunyai banyak jabatan, termasuk "
