@@ -6,10 +6,14 @@ id: rules
 <section class="rules-section">
     <div class="rules-container">
         <h1 class="rules-heading">PWindows Server Rules</h1>
-        {{ content }}
+        {% assign rules_fallback = false %}
+        {% if site.active_lang != site.default_lang %}{% assign rules_fallback = true %}{% endif %}
+        {% include fallback-notice.html show=rules_fallback %}
+        <div{% if rules_fallback %} lang="{{ site.default_lang }}"{% endif %}>{{ content }}</div>
         {% if page.last_updated %}
         <div class="last-updated-rules">
-          <p><i>Last updated: {{ page.last_updated | date: "%B %-d, %Y at %-I:%M %p" }}</i></p>
+          {% assign ui = site.data.ui[site.active_lang] | default: site.data.ui[site.default_lang] %}
+          <p><i>{{ ui.last_updated }}: {{ page.last_updated | date: "%B %-d, %Y at %-I:%M %p" }}</i></p>
         </div>
         {% endif %}
     </div>

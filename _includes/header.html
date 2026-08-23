@@ -1,12 +1,15 @@
 <!-- Mobile Menu Overlay -->
+{% assign ui = site.data.ui[site.active_lang] | default: site.data.ui[site.default_lang] %}
 <div class="menu-overlay" id="mobileMenu" aria-hidden="true" inert>
-  <nav class="nav-menu" aria-label="Site menu">
+  <nav class="nav-menu" aria-label="{{ ui.navigation | escape }}">
     <a href="{{ '/about' | relative_url }}" class="nav-item btn">
       <img
         class="nav-item-icon"
         src="{{ '/assets/mojang/svg/icons/book.png' | relative_url }}"
         alt="Book icon"
         aria-hidden="true"
+        width="160"
+        height="160"
       />
       {{ site.data.translations[site.active_lang].site.header.about }}
     </a>
@@ -16,6 +19,8 @@
         src="{{ '/assets/mojang/Invicon_Map.png' | relative_url }}"
         alt="Map icon"
         aria-hidden="true"
+        width="16"
+        height="16"
       />
       {{ site.data.translations[site.active_lang].site.header.news }}
     </a>
@@ -25,6 +30,8 @@
         src="{{ '/assets/mojang/svg/icons/color-two-players.svg' | relative_url }}"
         alt="Map icon"
         aria-hidden="true"
+        width="32"
+        height="32"
       />
       {{ site.data.translations[site.active_lang].site.header.staff }}
     </a>
@@ -34,6 +41,8 @@
         src="{{ '/assets/mojang/svg/icons/color-chest.svg' | relative_url }}"
         alt="Map icon"
         aria-hidden="true"
+        width="32"
+        height="32"
       />
       {{ site.data.translations[site.active_lang].site.header.departments }}
     </a>
@@ -43,6 +52,8 @@
         src="{{ '/assets/icons/controller.png' | relative_url }}"
         alt="Controller icon"
         aria-hidden="true"
+        width="22"
+        height="20"
       />
       {{ site.data.translations[site.active_lang].site.header.games }}
     </a>
@@ -52,6 +63,8 @@
         src="{{ '/assets/mojang/svg/icons/what-block.svg' | relative_url }}"
         alt="Grass block icon"
         aria-hidden="true"
+        width="32"
+        height="32"
       />
       {{ site.data.translations[site.active_lang].site.header.join-server }}
     </button>
@@ -61,6 +74,8 @@
         src="{{ '/assets/mojang/svg/icons/color-grass-block.png' | relative_url }}"
         alt="Grass block icon"
         aria-hidden="true"
+        width="1024"
+        height="1024"
       />
       {{ site.data.translations[site.active_lang].site.header.launch-bedrock }}
     </button>
@@ -76,6 +91,8 @@
           class="social-link-img"
           src="{{ '/assets/mojang/svg/icons/discord.png' | relative_url }}"
           alt=""
+          width="15"
+          height="16"
         />
       </a>
       <a
@@ -87,6 +104,8 @@
           class="social-link-img"
           src="{{ '/assets/mojang/svg/icons/color-youtube.svg' | relative_url }}"
           alt=""
+          width="32"
+          height="32"
         />
       </a>
       <a
@@ -98,6 +117,8 @@
           class="social-link-img social-link-img--compact"
           src="{{ '/assets/mojang/svg/icons/color-twitter.svg' | relative_url }}"
           alt=""
+          width="16"
+          height="16"
         />
       </a>
     </div>
@@ -108,12 +129,14 @@
 </div>
 
 <!-- Topbar -->
-<nav class="topbar" aria-label="Primary navigation">
+<nav class="topbar" aria-label="{{ ui.primary_navigation | escape }}">
   <button
     class="hamburger"
     id="hamburger"
     type="button"
-    aria-label="Open site menu"
+    aria-label="{{ ui.open_menu | escape }}"
+    data-open-label="{{ ui.open_menu | escape }}"
+    data-close-label="{{ ui.close_menu | escape }}"
     aria-controls="mobileMenu"
     aria-expanded="false"
   >
@@ -124,11 +147,11 @@
     </span>
   </button>
 
-  <a class="logo" href="{{ '/' | relative_url }}" aria-label="PWindows home">
+  <a class="logo" href="{{ '/' | relative_url }}" aria-label="{{ ui.home | escape }}">
     {% if site.active_lang == 'zh-cn' %}
-      <img src="{{ '/assets/PWindows-Chinese.svg' | relative_url }}" alt="派视界 Logo" class="logo-img"/>
+      <img src="{{ '/assets/PWindows-Chinese.svg' | relative_url }}" alt="派视界 Logo" class="logo-img" width="991" height="326" />
     {% else %}
-      <img src="{{ site.data.site.links.site_logo | relative_url }}" alt="PWindows Logo" class="logo-img"/>
+      <img src="{{ site.data.site.links.site_logo | relative_url }}" alt="PWindows Logo" class="logo-img" width="1452" height="262" />
     {% endif %}
   </a>
 

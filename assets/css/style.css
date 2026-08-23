@@ -17,6 +17,8 @@
   --card-background: rgba(255, 255, 255, 0.96);
   --card-border: rgba(61, 66, 80, 0.2);
   --card-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --content-width: 1200px;
+  --topbar-height: 80px;
   --font-display: "Minecraft Ten v2", "Alibaba PuHuiTi Black", monospace;
   --font-pixel: "Minecraft Seven v2", "Alibaba PuHuiTi Regular", monospace;
   --font-body: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -50,13 +52,7 @@
 
 @font-face {
   font-family: "Alibaba PuHuiTi Black";
-  src:
-    url("../fonts/AlibabaPuHuiTi-3-115-Black/AlibabaPuHuiTi-3-115-Black.ttf")
-      format("truetype"),
-    url("../fonts/AlibabaPuHuiTi-3-115-Black/AlibabaPuHuiTi-3-115-Black.woff")
-      format("woff"),
-    url("../fonts/AlibabaPuHuiTi-3-115-Black/AlibabaPuHuiTi-3-115-Black.woff2")
-      format("woff2");
+  src: url("../fonts/AlibabaPuHuiTi-3-115-Black/AlibabaPuHuiTi-3-115-Black.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -68,13 +64,7 @@
 
 @font-face {
   font-family: "Alibaba PuHuiTi Regular";
-  src:
-    url("../fonts/AlibabaPuHuiTi-3-55-Regular/AlibabaPuHuiTi-3-55-Regular.ttf")
-      format("truetype"),
-    url("../fonts/AlibabaPuHuiTi-3-55-Regular/AlibabaPuHuiTi-3-55-Regular.woff")
-      format("woff"),
-    url("../fonts/AlibabaPuHuiTi-3-55-Regular/AlibabaPuHuiTi-3-55-Regular.woff2")
-      format("woff2");
+  src: url("../fonts/AlibabaPuHuiTi-3-55-Regular/AlibabaPuHuiTi-3-55-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -101,8 +91,7 @@ a:not(.btn):not(.button):not(.no-icon):not(.logo):not(.footer-logo)::after {
   display: inline-block;
   width: 0.5em;
   height: 0.5em;
-  margin-left: 0.4em;
-  margin-right: 0.1em;
+  margin-inline: 0.4em 0.1em;
   background-color: currentColor;
   clip-path: var(--arrow-shape);
   transition: transform 0.2s ease;
@@ -146,17 +135,17 @@ button {
 }
 
 :where(a, button, select):focus-visible {
-  outline: 3px solid #1565c0;
-  outline-offset: 4px;
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px #111111;
 }
 
 /* Header and Navigation */
 .topbar {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
+  inset-inline: 0;
+  height: var(--topbar-height);
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -216,23 +205,25 @@ button {
 /* Mobile Menu Overlay - Desktop sidebar, mobile full screen */
 .menu-overlay {
   position: fixed;
-  top: 80px;
-  left: -400px;
+  top: var(--topbar-height);
+  inset-inline-start: -400px;
   width: 400px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - var(--topbar-height));
+  height: calc(100dvh - var(--topbar-height));
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 1001;
-  transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: inset-inline-start 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .menu-overlay.active {
-  left: 0;
+  inset-inline-start: 0;
 }
 
 /* Navigation Menu */
@@ -247,14 +238,15 @@ button {
   width: 100%;
 
   flex: 1;
-  /* overflow-y: auto; */
+  min-height: min-content;
+  overflow-y: visible;
   overscroll-behavior: contain;
 }
 
 .nav-item {
   font-family: var(--font-pixel);
   width: 100%;
-  text-align: left;
+  text-align: start;
   image-rendering: pixelated;
 }
 
@@ -267,7 +259,7 @@ button {
 
 .nav-item-no-icon::before {
   content: " ";
-  padding-left: 1.5em;
+  padding-inline-start: 1.5em;
 }
 
 /* Menu Footer */
@@ -317,7 +309,7 @@ button {
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 50%;
+  inset-inline-start: 50%;
   transform: translateX(-50%);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -551,11 +543,12 @@ button {
   --btn-active-border: white;
   --btn-idle-shade: rgba(0, 0, 0, 0.05);
   --btn-hover-shade: rgba(0, 0, 0, 0.1);
+  color: var(--mc-vanilla-coldgrey-6);
 }
 
 .back-to-top {
   position: fixed;
-  right: 24px;
+  inset-inline-end: 24px;
   bottom: 24px;
   z-index: 40;
   width: 56px;
@@ -1209,6 +1202,9 @@ article > p {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --topbar-height: 70px;
+  }
   .games-content-part {
     flex-direction: column !important;
     gap: 0;
@@ -1479,8 +1475,8 @@ article > p {
   }
 
   .logo {
-    width: 200%;
-    max-height: 200%;
+    width: min(52vw, 280px);
+    max-height: 100%;
     height: 80%;
   }
 
@@ -1489,7 +1485,7 @@ article > p {
   }
 
   .menu-overlay {
-    left: -100%;
+    inset-inline-start: -100%;
     width: 100vw;
     padding-top: 0;
     box-shadow: none;
@@ -1543,9 +1539,9 @@ article > p {
   }
 
   .menu-overlay {
-    top: 70px;
-    height: calc(100vh - 70px);
-    height: calc(100dvh - 70px);
+    top: var(--topbar-height);
+    height: calc(100vh - var(--topbar-height));
+    height: calc(100dvh - var(--topbar-height));
     padding-top: 30px;
   }
 
@@ -1990,11 +1986,40 @@ article > p {
 }
 
 .content h2 {
-  padding-bottom: none;
-  border-bottom: none;
-  margin-bottom: none;
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
 }
 
 .mc-seven {
-  font-family: "Minecraft Seven", monospace;
+  font-family: var(--font-pixel);
+}
+
+.fallback-notice {
+  width: min(var(--content-width), calc(100% - 40px));
+  margin: calc(var(--topbar-height) + 1rem) auto 1rem;
+  padding: 0.85rem 1rem;
+  border: 2px solid #7a4b00;
+  color: #2c2f3a;
+  background: #fff3c4;
+  font-weight: 700;
+}
+
+.content-page-body .fallback-notice,
+.rules-container .fallback-notice,
+.featured-news .fallback-notice {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+[dir="rtl"] .hamburger-lines > span {
+  box-shadow: inset 4px 0 0 var(--mc-vanilla-coldgrey-1);
+}
+
+[dir="rtl"] .hamburger:hover > .hamburger-lines span {
+  box-shadow: inset 4px 0 0 var(--mc-vanilla-coldgrey-2);
+}
+
+[dir="rtl"] a:not(.btn):not(.button):not(.no-icon):not(.logo):not(.footer-logo)::after {
+  transform: scaleX(-1);
 }

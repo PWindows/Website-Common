@@ -4,18 +4,23 @@
 {% assign person_name = localized_person.name | default: default_person.name %}
 {% assign person_role = localized_person.role | default: default_person.role %}
 {% assign person_bio = localized_person.bio | default: default_person.bio %}
+{% assign person_fallback = false %}
+{% unless localized_person %}{% if site.active_lang != site.default_lang %}{% assign person_fallback = true %}{% endif %}{% endunless %}
+{% assign ui = site.data.ui[site.active_lang] | default: site.data.ui[site.default_lang] %}
 {% if person.aboutpage %}
 <article class="staff-card">
   {% if person.path %}
-  <a class="staff-card-link no-icon" href="{{ person.path | relative_url }}" aria-label="View {{ person_name | escape }}'s profile">
+  <a class="staff-card-link no-icon" href="{{ person.path | relative_url }}" aria-label="{{ person_name | escape }}">
   {% endif %}
     <img
       class="staff-card-image"
       src="{{ person.pfp | relative_url }}"
-      alt="{{ person_name | escape }} profile picture"
+      alt="{{ person_name | escape }} {{ ui.profile_picture | escape }}"
       loading="lazy"
+      width="{{ person.pfp_width | default: 672 }}"
+      height="{{ person.pfp_height | default: 672 }}"
     />
-    <div class="staff-card-content">
+    <div class="staff-card-content"{% if person_fallback %} lang="{{ site.default_lang }}"{% endif %}>
       <h2>{{ person_name }}</h2>
       <p class="staff-role">{{ person_role }}</p>
       <p>{{ person_bio }}</p>
@@ -25,7 +30,7 @@
   {% endif %}
   {% if person.socials %}
     <div class="staff-card-socials-wrap">
-      <ul class="staff-socials" aria-label="{{ person_name | escape }} social links">
+      <ul class="staff-socials" aria-label="{{ person_name | escape }} {{ ui.social_links | escape }}">
         {% for social in person.socials %}
           <li><a href="{{ social[1] | escape }}">{% if social[0] == 'github' %}GitHub{% else %}{{ social[0] | capitalize }}{% endif %}</a></li>
         {% endfor %}

@@ -1,12 +1,13 @@
+{% assign ui = site.data.ui[site.active_lang] | default: site.data.ui[site.default_lang] %}
 <footer class="footer">
   <nav class="footer-container" aria-labelledby="footer-navigation-heading">
-    <h2 class="sr-only" id="footer-navigation-heading">Footer navigation</h2>
+    <h2 class="sr-only" id="footer-navigation-heading">{{ ui.footer_navigation }}</h2>
     <div class="footer-column footer-column-left">
       <a href="{{ '/' | relative_url }}" class="footer-logo">
         {% if site.active_lang == 'zh-cn' %}
-          <img src="{{ '/assets/PWindows-Chinese.svg' | relative_url }}" alt="派视界">
+          <img src="{{ '/assets/PWindows-Chinese.svg' | relative_url }}" alt="派视界" width="991" height="326">
         {% else %}
-          <img src="{{ '/assets/PWindows.svg' | relative_url }}" alt="PWindows">
+          <img src="{{ '/assets/PWindows.svg' | relative_url }}" alt="PWindows" width="1452" height="262">
         {% endif %}
       </a>
       <p class="footer-copy">

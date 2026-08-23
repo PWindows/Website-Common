@@ -1,0 +1,6 @@
+{% if include.show and site.active_lang != site.default_lang %}
+  {% assign fallback_ui = site.data.ui[site.active_lang] | default: site.data.ui[site.default_lang] %}
+  <aside class="fallback-notice" role="note" data-english-fallback lang="{{ site.active_lang }}">
+    {{ fallback_ui.fallback_notice }}
+  </aside>
+{% endif %}

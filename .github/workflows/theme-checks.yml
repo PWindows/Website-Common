@@ -1,0 +1,27 @@
+name: Theme checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Check JavaScript syntax
+        run: node --check assets/js/main.js
+      - name: Reject unresolved conflict markers
+        run: '! grep -R -n -E "^(<<<<<<<|=======|>>>>>>>)" --exclude-dir=.git .'
+      - name: Build theme gem
+        run: gem build pwindows-web-theme.gemspec
+      - name: Verify packaged files
+        run: ruby tools/verify-package.rb

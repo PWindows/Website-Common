@@ -1,0 +1,274 @@
+en-us: &en
+  navigation: "Site menu"
+  primary_navigation: "Primary navigation"
+  footer_navigation: "Footer navigation"
+  open_menu: "Open site menu"
+  close_menu: "Close site menu"
+  home: "PWindows home"
+  back_to_top: "Back to top"
+  fallback_notice: "This content is not translated yet and is shown in English."
+  written_by: "Written by"
+  published: "Published"
+  share_story: "Share this story"
+  read_more: "Read more"
+  latest_news: "Catch up on the latest PWindows news and updates!"
+  show_more: "Show more"
+  last_updated: "Last updated"
+  profile_picture: "profile picture"
+  social_links: "social links"
+en-gb:
+  <<: *en
+zh-cn:
+  <<: *en
+  navigation: "网站菜单"
+  primary_navigation: "主导航"
+  footer_navigation: "页脚导航"
+  open_menu: "打开网站菜单"
+  close_menu: "关闭网站菜单"
+  home: "PWindows 首页"
+  back_to_top: "返回顶部"
+  fallback_notice: "此内容尚未翻译，现以英语显示。"
+  written_by: "作者"
+  published: "发布于"
+  share_story: "分享此文章"
+  read_more: "阅读更多"
+  latest_news: "查看最新的 PWindows 新闻与更新！"
+  show_more: "显示更多"
+  last_updated: "最后更新"
+  profile_picture: "头像"
+  social_links: "社交链接"
+es-es: &es
+  <<: *en
+  navigation: "Menú del sitio"
+  primary_navigation: "Navegación principal"
+  footer_navigation: "Navegación del pie de página"
+  open_menu: "Abrir el menú del sitio"
+  close_menu: "Cerrar el menú del sitio"
+  home: "Inicio de PWindows"
+  back_to_top: "Volver arriba"
+  fallback_notice: "Este contenido aún no está traducido y se muestra en inglés."
+es-mx:
+  <<: *es
+fr-fr: &fr
+  <<: *en
+  navigation: "Menu du site"
+  primary_navigation: "Navigation principale"
+  footer_navigation: "Navigation du pied de page"
+  open_menu: "Ouvrir le menu du site"
+  close_menu: "Fermer le menu du site"
+  home: "Accueil PWindows"
+  back_to_top: "Retour en haut"
+  fallback_notice: "Ce contenu n’est pas encore traduit et s’affiche en anglais."
+fr-ca:
+  <<: *fr
+de-de:
+  <<: *en
+  navigation: "Website-Menü"
+  primary_navigation: "Hauptnavigation"
+  footer_navigation: "Fußzeilennavigation"
+  open_menu: "Website-Menü öffnen"
+  close_menu: "Website-Menü schließen"
+  home: "PWindows-Startseite"
+  back_to_top: "Nach oben"
+  fallback_notice: "Dieser Inhalt ist noch nicht übersetzt und wird auf Englisch angezeigt."
+it-it:
+  <<: *en
+  navigation: "Menu del sito"
+  primary_navigation: "Navigazione principale"
+  footer_navigation: "Navigazione a piè di pagina"
+  open_menu: "Apri il menu del sito"
+  close_menu: "Chiudi il menu del sito"
+  home: "Pagina iniziale di PWindows"
+  back_to_top: "Torna su"
+  fallback_notice: "Questo contenuto non è ancora tradotto ed è mostrato in inglese."
+pt-pt: &pt
+  <<: *en
+  navigation: "Menu do site"
+  primary_navigation: "Navegação principal"
+  footer_navigation: "Navegação do rodapé"
+  open_menu: "Abrir menu do site"
+  close_menu: "Fechar menu do site"
+  home: "Página inicial do PWindows"
+  back_to_top: "Voltar ao topo"
+  fallback_notice: "Este conteúdo ainda não foi traduzido e é apresentado em inglês."
+pt-br:
+  <<: *pt
+ja-jp:
+  <<: *en
+  navigation: "サイトメニュー"
+  primary_navigation: "メインナビゲーション"
+  footer_navigation: "フッターナビゲーション"
+  open_menu: "サイトメニューを開く"
+  close_menu: "サイトメニューを閉じる"
+  home: "PWindows ホーム"
+  back_to_top: "ページ上部へ"
+  fallback_notice: "このコンテンツは未翻訳のため、英語で表示されています。"
+  written_by: "著者"
+  published: "公開日"
+  share_story: "この記事を共有"
+  read_more: "続きを読む"
+  latest_news: "PWindows の最新ニュースと更新情報をご覧ください！"
+  show_more: "さらに表示"
+  last_updated: "最終更新"
+  profile_picture: "プロフィール画像"
+  social_links: "ソーシャルリンク"
+ko-kr:
+  <<: *en
+  navigation: "사이트 메뉴"
+  primary_navigation: "기본 탐색"
+  footer_navigation: "바닥글 탐색"
+  open_menu: "사이트 메뉴 열기"
+  close_menu: "사이트 메뉴 닫기"
+  home: "PWindows 홈"
+  back_to_top: "맨 위로"
+  fallback_notice: "이 콘텐츠는 아직 번역되지 않아 영어로 표시됩니다."
+ru-ru:
+  <<: *en
+  navigation: "Меню сайта"
+  primary_navigation: "Основная навигация"
+  footer_navigation: "Навигация в подвале"
+  open_menu: "Открыть меню сайта"
+  close_menu: "Закрыть меню сайта"
+  home: "Главная PWindows"
+  back_to_top: "Наверх"
+  fallback_notice: "Этот материал ещё не переведён и показан на английском языке."
+nl-nl:
+  <<: *en
+  navigation: "Sitemenu"
+  primary_navigation: "Hoofdnavigatie"
+  footer_navigation: "Voettekstnavigatie"
+  open_menu: "Sitemenu openen"
+  close_menu: "Sitemenu sluiten"
+  home: "PWindows-startpagina"
+  back_to_top: "Terug naar boven"
+  fallback_notice: "Deze inhoud is nog niet vertaald en wordt in het Engels weergegeven."
+pl-pl:
+  <<: *en
+  navigation: "Menu witryny"
+  primary_navigation: "Główna nawigacja"
+  footer_navigation: "Nawigacja w stopce"
+  open_menu: "Otwórz menu witryny"
+  close_menu: "Zamknij menu witryny"
+  home: "Strona główna PWindows"
+  back_to_top: "Wróć na górę"
+  fallback_notice: "Ta treść nie została jeszcze przetłumaczona i jest wyświetlana po angielsku."
+sv-se:
+  <<: *en
+  navigation: "Webbplatsmeny"
+  primary_navigation: "Huvudnavigering"
+  footer_navigation: "Sidfotsnavigering"
+  open_menu: "Öppna webbplatsmenyn"
+  close_menu: "Stäng webbplatsmenyn"
+  home: "PWindows startsida"
+  back_to_top: "Till toppen"
+  fallback_notice: "Det här innehållet är ännu inte översatt och visas på engelska."
+da-dk:
+  <<: *en
+  navigation: "Webstedsmenu"
+  primary_navigation: "Primær navigation"
+  footer_navigation: "Sidefodsnavigation"
+  open_menu: "Åbn webstedsmenu"
+  close_menu: "Luk webstedsmenu"
+  home: "PWindows-startside"
+  back_to_top: "Til toppen"
+  fallback_notice: "Dette indhold er endnu ikke oversat og vises på engelsk."
+no-no:
+  <<: *en
+  navigation: "Nettstedsmeny"
+  primary_navigation: "Hovednavigasjon"
+  footer_navigation: "Bunntekstnavigasjon"
+  open_menu: "Åpne nettstedsmenyen"
+  close_menu: "Lukk nettstedsmenyen"
+  home: "PWindows-startside"
+  back_to_top: "Til toppen"
+  fallback_notice: "Dette innholdet er ikke oversatt ennå og vises på engelsk."
+fi-fi:
+  <<: *en
+  navigation: "Sivustovalikko"
+  primary_navigation: "Päänavigointi"
+  footer_navigation: "Alatunnisteen navigointi"
+  open_menu: "Avaa sivustovalikko"
+  close_menu: "Sulje sivustovalikko"
+  home: "PWindows-etusivu"
+  back_to_top: "Takaisin ylös"
+  fallback_notice: "Tätä sisältöä ei ole vielä käännetty, joten se näytetään englanniksi."
+tr-tr:
+  <<: *en
+  navigation: "Site menüsü"
+  primary_navigation: "Ana gezinme"
+  footer_navigation: "Alt bilgi gezinmesi"
+  open_menu: "Site menüsünü aç"
+  close_menu: "Site menüsünü kapat"
+  home: "PWindows ana sayfası"
+  back_to_top: "Başa dön"
+  fallback_notice: "Bu içerik henüz çevrilmedi ve İngilizce gösteriliyor."
+ar-sa:
+  <<: *en
+  navigation: "قائمة الموقع"
+  primary_navigation: "التنقل الرئيسي"
+  footer_navigation: "تنقل التذييل"
+  open_menu: "فتح قائمة الموقع"
+  close_menu: "إغلاق قائمة الموقع"
+  home: "الصفحة الرئيسية لـ PWindows"
+  back_to_top: "العودة إلى الأعلى"
+  fallback_notice: "لم تتم ترجمة هذا المحتوى بعد، لذا يُعرض باللغة الإنجليزية."
+he-il:
+  <<: *en
+  navigation: "תפריט האתר"
+  primary_navigation: "ניווט ראשי"
+  footer_navigation: "ניווט תחתון"
+  open_menu: "פתיחת תפריט האתר"
+  close_menu: "סגירת תפריט האתר"
+  home: "דף הבית של PWindows"
+  back_to_top: "חזרה למעלה"
+  fallback_notice: "תוכן זה עדיין לא תורגם ומוצג באנגלית."
+hi-in:
+  <<: *en
+  navigation: "साइट मेनू"
+  primary_navigation: "मुख्य नेविगेशन"
+  footer_navigation: "फुटर नेविगेशन"
+  open_menu: "साइट मेनू खोलें"
+  close_menu: "साइट मेनू बंद करें"
+  home: "PWindows होम"
+  back_to_top: "ऊपर जाएँ"
+  fallback_notice: "इस सामग्री का अभी अनुवाद नहीं हुआ है और इसे अंग्रेज़ी में दिखाया गया है।"
+th-th:
+  <<: *en
+  navigation: "เมนูเว็บไซต์"
+  primary_navigation: "การนำทางหลัก"
+  footer_navigation: "การนำทางส่วนท้าย"
+  open_menu: "เปิดเมนูเว็บไซต์"
+  close_menu: "ปิดเมนูเว็บไซต์"
+  home: "หน้าหลัก PWindows"
+  back_to_top: "กลับไปด้านบน"
+  fallback_notice: "เนื้อหานี้ยังไม่ได้แปลและแสดงเป็นภาษาอังกฤษ"
+vi-vn:
+  <<: *en
+  navigation: "Trình đơn trang"
+  primary_navigation: "Điều hướng chính"
+  footer_navigation: "Điều hướng chân trang"
+  open_menu: "Mở trình đơn trang"
+  close_menu: "Đóng trình đơn trang"
+  home: "Trang chủ PWindows"
+  back_to_top: "Lên đầu trang"
+  fallback_notice: "Nội dung này chưa được dịch và đang hiển thị bằng tiếng Anh."
+id-id:
+  <<: *en
+  navigation: "Menu situs"
+  primary_navigation: "Navigasi utama"
+  footer_navigation: "Navigasi footer"
+  open_menu: "Buka menu situs"
+  close_menu: "Tutup menu situs"
+  home: "Beranda PWindows"
+  back_to_top: "Kembali ke atas"
+  fallback_notice: "Konten ini belum diterjemahkan dan ditampilkan dalam bahasa Inggris."
+ms-my:
+  <<: *en
+  navigation: "Menu laman"
+  primary_navigation: "Navigasi utama"
+  footer_navigation: "Navigasi pengaki"
+  open_menu: "Buka menu laman"
+  close_menu: "Tutup menu laman"
+  home: "Laman utama PWindows"
+  back_to_top: "Kembali ke atas"
+  fallback_notice: "Kandungan ini belum diterjemahkan dan dipaparkan dalam bahasa Inggeris."
