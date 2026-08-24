@@ -2,21 +2,23 @@
 {% assign text_direction = active_language.direction | default: 'ltr' %}
 {% assign ui = site.data.ui[site.active_lang] | default: site.data.ui[site.default_lang] %}
 {% assign is_english_fallback = page.english_fallback | default: false %}
+{% assign default_site_meta = site.data.site_meta[site.default_lang] %}
+{% assign active_site_meta = site.data.site_meta[site.active_lang] | default: default_site_meta %}
 {% if site.active_lang != site.default_lang and page.lang == site.default_lang %}
   {% assign is_english_fallback = true %}
 {% endif %}
 <!doctype html>
 <html lang="{{ site.active_lang }}" dir="{{ text_direction }}">
   <head>
-    {% assign page_description = page.summary | default: page.description | default: site.description %}
-    {% assign page_image = page.banner | default: '/assets/PWindows.svg' %}
+    {% assign page_description = page.summary | default: active_site_meta.descriptions[page.id] | default: page.description | default: default_site_meta.descriptions[page.id] | default: site.description %}
+    {% assign page_image = page.social_image | default: page.banner | default: page.image | default: '/assets/PWindows.svg' %}
     {% assign asset_revision = site.github.build_revision %}
     {% unless asset_revision %}
       {% assign asset_revision = site.time | date: '%s' %}
     {% endunless %}
-    {% assign site_name = site.data.translations[site.active_lang].site.name %}
-    {% assign site_tagline = site.data.translations[site.active_lang].site.tagline %}
-    {% assign page_title = site.data.translations[site.active_lang].site.page_titles[page.id] | default: page.title | default: site.title %}
+    {% assign site_name = active_site_meta.name | default: default_site_meta.name | default: site.data.translations[site.active_lang].site.name | default: site.data.translations[site.default_lang].site.name | default: site.title %}
+    {% assign site_tagline = active_site_meta.tagline | default: default_site_meta.tagline | default: site.data.translations[site.active_lang].site.tagline | default: site.data.translations[site.default_lang].site.tagline | default: site.description %}
+    {% assign page_title = active_site_meta.page_titles[page.id] | default: default_site_meta.page_titles[page.id] | default: site.data.translations[site.active_lang].site.page_titles[page.id] | default: site.data.translations[site.default_lang].site.page_titles[page.id] | default: page.title | default: site.title %}
     {% assign author = site.data.staff[page.author] %}
     {% assign localized_author = author[site.active_lang] %}
     {% assign author_name = localized_author.name | default: author[site.default_lang].name %}
@@ -36,12 +38,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page_full_title | strip }}</title>
-    {% I18n_Headers %}
+    {% include i18n-head.html %}
     <meta name="title" content="{{ page_full_title | strip | escape }}" />
-    <meta name="application-name" content="PWindows" />
+    <meta name="application-name" content="{{ site_name | escape }}" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     {% if page.robots %}<meta name="robots" content="{{ page.robots | escape }}" />{% endif %}
-    <meta property="og:site_name" content="PWindows" />
+    <meta property="og:site_name" content="{{ site_name | escape }}" />
 
     <meta
       name="description"
@@ -145,6 +147,7 @@
     {% endfor %} {% endif %}
   </head>
   <body data-active-lang="{{ site.active_lang }}">
+    <a class="skip-link" href="#main-content">{{ ui.skip_to_content | escape }}</a>
     {% include header.html %}
     <div class="sr-only" id="site-status" role="status" aria-live="polite"></div>
     <main id="main-content"{% if is_english_fallback %} lang="{{ site.default_lang }}"{% endif %}>

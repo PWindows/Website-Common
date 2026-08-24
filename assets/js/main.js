@@ -48,6 +48,23 @@ function setupMenu() {
   const menuItems = () =>
     Array.from(menu.querySelectorAll('a[href], button:not([disabled])'));
 
+  const backgroundElements = () =>
+    Array.from(document.querySelectorAll("#main-content, .footer, #backToTopBtn"));
+
+  function setBackgroundInert(inert) {
+    backgroundElements().forEach((element) => {
+      if (inert) {
+        if (!element.hasAttribute("inert")) {
+          element.setAttribute("inert", "");
+          element.dataset.menuInert = "true";
+        }
+      } else if (element.dataset.menuInert === "true") {
+        element.removeAttribute("inert");
+        delete element.dataset.menuInert;
+      }
+    });
+  }
+
   function setMenuOpen(open, returnFocus = false) {
     menuButton.classList.toggle("active", open);
     menu.classList.toggle("active", open);
@@ -59,6 +76,7 @@ function setupMenu() {
     );
     menu.setAttribute("aria-hidden", String(!open));
     menu.toggleAttribute("inert", !open);
+    setBackgroundInert(open);
 
     if (open) menuItems()[0]?.focus();
     else if (returnFocus) menuButton.focus();

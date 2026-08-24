@@ -1,0 +1,18 @@
+{%- assign default_language = site.default_lang | default: "en-us" -%}
+{%- assign active_language_code = site.active_lang | default: default_language -%}
+{%- assign base_page_path = page.url | default: "/" -%}
+{%- if active_language_code == default_language -%}
+  {%- assign localized_page_path = base_page_path -%}
+{%- else -%}
+  {%- capture localized_page_path -%}/{{ active_language_code }}{{ base_page_path }}{%- endcapture -%}
+{%- endif -%}
+<link rel="canonical" href="{{ localized_page_path | absolute_url }}">
+{%- for language in site.languages %}
+  {%- if language == default_language -%}
+    {%- assign alternate_path = base_page_path -%}
+  {%- else -%}
+    {%- capture alternate_path -%}/{{ language }}{{ base_page_path }}{%- endcapture -%}
+  {%- endif %}
+<link rel="alternate" hreflang="{{ language }}" href="{{ alternate_path | absolute_url }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ base_page_path | absolute_url }}">

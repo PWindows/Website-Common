@@ -134,6 +134,22 @@ button {
   border: 0;
 }
 
+.skip-link {
+  position: fixed;
+  z-index: 2000;
+  inset-block-start: 0.5rem;
+  inset-inline-start: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #ffffff;
+  color: #111111;
+  font-family: var(--font-pixel);
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 :where(a, button, select):focus-visible {
   outline: 3px solid #ffffff;
   outline-offset: 2px;
@@ -468,8 +484,8 @@ button {
 .copy-button::after {
   content: "Copied!";
   position: absolute;
-  top: -30px;
-  left: 50%;
+  inset-block-start: -30px;
+  inset-inline-start: 50%;
   transform: translateX(-50%);
   background: linear-gradient(
     135deg,
@@ -633,7 +649,7 @@ button {
 
 .howtojoin-heading {
   color: #ffffff;
-  padding-right: 20px;
+  padding-inline-end: 20px;
 }
 
 .howtojoin-footnote {
@@ -878,7 +894,7 @@ button {
   align-items: center;
   gap: 0.5rem;
   margin-top: 5rem;
-  margin-right: 2rem;
+  margin-inline-end: 2rem;
 }
 
 .featured-news {
@@ -950,7 +966,7 @@ article > p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   width: 100%;
-  text-align: left;
+  text-align: start;
 }
 
 .about-grid article,
@@ -1135,8 +1151,8 @@ article > p {
 
 .game-debris {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset-block-start: 0;
+  inset-inline-start: 0;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -1262,7 +1278,7 @@ article > p {
 }
 
 .staff-detail-content {
-  text-align: left;
+  text-align: start;
 }
 
 .staff-detail-card .staff-role {
@@ -1431,7 +1447,7 @@ article > p {
   }
 
   .howtojoin-heading {
-    padding-right: 0;
+    padding-inline-end: 0;
   }
 
   .howtojoin-footnote {
@@ -1448,7 +1464,13 @@ article > p {
     width: 100%;
   }
 
-  .btn:not(.nav-item) {
+  .bottom-content > .btn,
+  .page-actions > .btn,
+  .content-card > .btn,
+  .flip-card .btn,
+  .view-game-btn,
+  .about-link,
+  .bottom-button {
     font-size: 1rem;
     text-align: center;
   }
@@ -1525,7 +1547,13 @@ article > p {
     max-width: 300px;
   }
 
-  .btn:not(.nav-item) {
+  .bottom-content > .btn,
+  .page-actions > .btn,
+  .content-card > .btn,
+  .flip-card .btn,
+  .view-game-btn,
+  .about-link,
+  .bottom-button {
     padding: 16px 4px;
     font-size: 1rem;
     width: 100%;
@@ -1558,7 +1586,7 @@ article > p {
   }
 
   .article-grid {
-    padding-right: 2rem;
+    padding-inline-end: 2rem;
   }
 
   .article-grid > *,
@@ -1568,7 +1596,7 @@ article > p {
   }
 
   .featured-news {
-    margin-right: 2rem;
+    margin-inline-end: 2rem;
   }
 
   .about-grid,
@@ -1761,7 +1789,7 @@ article > p {
   display: block;
   margin-bottom: 1rem;
   width: 100%;
-  text-align: left;
+  text-align: start;
 }
 
 .footer-logo img {

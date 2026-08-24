@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.license       = "Nonstandard"
   spec.required_ruby_version = ">= 3.1"
 
-  spec.files         = `git ls-files -z --cached --others --exclude-standard`.split("\x0").select do |f|
+  spec.files         = `git ls-files -z --cached`.split("\x0").select do |f|
     File.file?(f) && f.match?(%r{^(_(data|includes|layouts|sass)/|assets/|lib/|README|LICENSE)}i) &&
       !f.start_with?("assets/extra/")
   end
